@@ -39,6 +39,36 @@
   height: 60px;
   background: url(../img/banner_icon.jpg) 0 0 no-repeat;
 }
+
+.close_btn {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.close_btn::after {
+  content: "";
+  position : absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 16px;
+  background-color: #fff;
+  transform: rotate(45deg);
+}
+
+.close_btn::before {
+  content: "";
+  position : absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 16px;
+  background-color: #fff;
+  transform: rotate(-45deg);
+}
+
 .header_banner_count {
   position: absolute;
   top: 0;
